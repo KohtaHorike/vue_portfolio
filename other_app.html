@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>test</title>
+	<link rel="stylesheet" href="lib/css/base.css">
+</head>
+<body>
+
+<div id="app">
+	<p>total likes: {{totalLikes}}</p>
+	<like-component message="Like" @increment="incrementTotal"></like-component>
+	<like-component message="Awesome" @increment="incrementTotal"></like-component>
+	<like-component message="Good" @increment="incrementTotal"></like-component>
+	<like-component @increment="incrementTotal"></like-component>
+</div>
+<script src="node_modules/vue/dist/vue.js"></script>
+<script src="lib/js/other_app.js"></script>
+</body>
+</html>
